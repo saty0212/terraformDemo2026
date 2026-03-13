@@ -20,5 +20,4 @@ __pycache__/
 .idea/
 .vscode/
 *.iml
-*.sh
 *.ps1     

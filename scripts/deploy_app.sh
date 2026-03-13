@@ -11,5 +11,6 @@ KEY_FILE="$2"
 
 chmod 600 "$KEY_FILE"
 
+ssh -o StrictHostKeyChecking=no -i "$KEY_FILE" "ec2-user@$HOST" "rm -rf /tmp/app /tmp/install_app_service.sh"
 scp -o StrictHostKeyChecking=no -i "$KEY_FILE" -r app scripts/install_app_service.sh "ec2-user@$HOST:/tmp/"
 ssh -o StrictHostKeyChecking=no -i "$KEY_FILE" "ec2-user@$HOST" "bash /tmp/install_app_service.sh"
