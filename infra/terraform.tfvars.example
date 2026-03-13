@@ -1,0 +1,7 @@
+aws_region   = "ap-south-1"
+project_name = "tf-gh-demo"
+instance_type = "t2.micro"
+app_port     = 5000
+
+# Do not store real secrets in this file for class demos.
+# Pass public_key through GitHub Actions secret TF_VAR_public_key.
