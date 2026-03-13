@@ -117,4 +117,4 @@ jobs:
         run: bash scripts/deploy_app.sh "${{ needs.terraform.outputs.public_ip }}" demo-key.pem
 
       - name: Show deployed application URL
-        run: echo "Application URL: ${{ needs.terraform.outputs.app_url }}"
+        run: 'echo "Application URL: ${{ needs.terraform.outputs.app_url }}"'
