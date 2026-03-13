@@ -8,7 +8,6 @@ SERVICE_FILE="/etc/systemd/system/demo-app.service"
 sudo mkdir -p "$APP_DIR"
 sudo rm -rf "$APP_DIR"/*
 sudo cp -r "$SOURCE_DIR"/* "$APP_DIR/"
-sudo python3 -m pip install --upgrade pip
 sudo python3 -m pip install -r "$APP_DIR/requirements.txt"
 
 cat <<'EOF' | sudo tee "$SERVICE_FILE" > /dev/null
