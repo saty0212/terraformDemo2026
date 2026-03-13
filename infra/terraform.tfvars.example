@@ -1,6 +1,6 @@
 aws_region   = "ap-south-1"
 project_name = "tf-gh-demo"
-instance_type = "t2.micro"
+instance_type = "t3.micro"
 app_port     = 5000
 
 # Do not store real secrets in this file for class demos.
