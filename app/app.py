@@ -37,7 +37,7 @@ def home():
         <body>
             <div class="card">
                 <h1>Terraform + AWS + GitHub Actions Demo</h1>
-                <p>This application is deployed automatically from GitHub Actions.</p>
+                <p>This application is deployed automatically from GitHub Actions to EC2 instances.</p>
                 <p><strong>Environment:</strong> {env_name}</p>
                 <p><strong>Server Hostname:</strong> {hostname}</p>
                 <p><strong>Current Time:</strong> {now}</p>
